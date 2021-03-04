@@ -3,7 +3,7 @@ from setuptools import setup, find_packages
 setup(
   name = 'pi-gan-pytorch',
   packages = find_packages(),
-  version = '0.0.1',
+  version = '0.0.11',
   license='MIT',
   description = 'π-GAN - Pytorch',
   author = 'Phil Wang',
@@ -15,7 +15,10 @@ setup(
   ],
   install_requires=[
     'einops>=0.3',
-    'torch>=1.6'
+    'pillow',
+    'torch>=1.6',
+    'torchvision',
+    'tqdm'
   ],
   classifiers=[
     'Development Status :: 4 - Beta',
